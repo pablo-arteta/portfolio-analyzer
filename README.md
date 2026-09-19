@@ -36,3 +36,14 @@ investment performance, risk and diversification.
 ## Project Status
 
 🚧 In development
+
+## Run the web app (WSL)
+
+```bash
+cd ~/portfolio-analyzer
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn api.main:app --app-dir src --reload --host 127.0.0.1 --port 8000
+```
+
+Open http://127.0.0.1:8000 — fetch prices from the form (or run `python scripts/fetch_prices.py` first). Phases 1–3: cleaned prices, daily/cumulative/annualized returns, and a buy-and-hold book from €10,000 (weights must sum to 1).
