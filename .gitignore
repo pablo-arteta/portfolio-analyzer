@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Downloaded market data (regenerate with scripts/fetch_prices.py)
+data/raw/*.csv
+data/processed/*.csv
