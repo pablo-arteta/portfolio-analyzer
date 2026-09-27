@@ -1,0 +1,47 @@
+test1
+Introduciendo solo TSLA: 
+'''
+    Introduce the ticker of the company: TSLA
+    [*********************100%***********************]  1 of 1 completed
+    Data downloaded successfully
+
+    Tickers introducidos:
+    ['TSLA']
+
+    Primeras filas de los datos descargados:
+    Price            Close        High         Low        Open    Volume
+    Ticker            TSLA        TSLA        TSLA        TSLA      TSLA
+    Date                                                                
+    2026-08-11  332.809998  336.200012  329.529999  332.799988  23345200
+    2026-08-12  327.510010  335.500000  323.640015  335.000000  28698900
+    2026-08-13  339.959991  341.640015  325.239990  327.200012  34708300
+    2026-08-14  342.269989  351.260010  335.329987  342.329987  45437100
+    2026-08-17  339.299988  345.450012  337.480011  340.690002  26037100
+    '''
+test2:
+Múltiple tickers: 
+Introduce the ticker of the company: TSLA
+Introduce the ticker of the company: ACVA
+Introduce the ticker of the company: TNON
+Introduce the ticker of the company: ""
+Introduce the ticker of the company: 
+[**********************50%                       ]  2 of 4 completedHTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: \"\""}}}
+$"": No data found, symbol may be delisted
+[*********************100%***********************]  4 of 4 completed
+
+1 Failed download:
+['""']: No data found, symbol may be delisted
+Data downloaded successfully
+
+Tickers introducidos:
+['TSLA', 'ACVA', 'TNON', '""']
+
+Primeras filas de los datos descargados:
+Price      Adj Close Close                         High                            ...         Low Open                          Volume                            
+Ticker            ""    ""  ACVA  TNON        TSLA   ""   ACVA   TNON        TSLA  ...        TSLA   ""   ACVA  TNON        TSLA     ""      ACVA    TNON      TSLA
+Date                                                                               ...                                                                             
+2026-08-11       NaN   NaN  7.26  6.14  332.809998  NaN  8.270  6.890  336.200012  ...  329.529999  NaN  8.220  6.15  332.799988    NaN  25659300  131300  23345200
+2026-08-12       NaN   NaN  7.76  5.64  327.510010  NaN  8.035  6.140  335.500000  ...  323.640015  NaN  7.360  6.03  335.000000    NaN   8857100   47700  28698900
+2026-08-13       NaN   NaN  7.96  5.96  339.959991  NaN  8.355  6.138  341.640015  ...  325.239990  NaN  7.720  5.73  327.200012    NaN   5821500   74600  34708300
+2026-08-14       NaN   NaN  8.27  5.16  342.269989  NaN  8.290  5.830  351.260010  ...  335.329987  NaN  7.920  5.70  342.329987    NaN   4083100   34100  45437100
+2026-08-17       NaN   NaN  7.62  4.92  339.299988  NaN  8.240  5.391  345.450012  ...  337.480011  NaN  8.215  5.08  340.690002    NaN   5370700   39300  26037100
